@@ -8,14 +8,19 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
-
+ <meta name="format-detection" content="telephone=no">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" />
 
 
-   
+    
+
+
+
+
+
     <title>Karen y Martín</title>
 
 </head>
@@ -223,9 +228,17 @@
 
             <input type="text" name="NOMBRE" placeholder="Nombre" required />
             <input type="text" name="APELLIDO" placeholder="Apellido" required />
-            <input type="text" name="DIETA" placeholder="Vegano / vegetariano / celíaco / nada"  />
+              <select name="DIETA" id="dieta" required>
+    <option value="" disabled selected>Dieta</option>
+    <option value="Nada">Nada</option>
+    <option value="Vegano">Vegano</option>
+    <option value="Vegetariano">Vegetariano</option>
+    <option value="Celíaco">Celíaco</option>
+    <option value="Otro">Alergia / restricción / aclaración</option>
+  </select>
         
             <textarea name="CANCION" placeholder="Recomendale una canción al DJ 🎶"></textarea> 
+            <textarea name="MENSAJE" placeholder="Dejale un mensaje a los novios 🤍"></textarea> 
 
 
             <button type="submit" class="boton">ENVIAR</button>
@@ -297,7 +310,7 @@
 
 <script src="./countdwon.js"></script>
 <script src="./reproductor.js"></script>
-
+<script src="./form.js"></script>
 <script src="script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
